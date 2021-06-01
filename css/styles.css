@@ -1,30 +1,59 @@
 
 body{
   font-family: "Montserrat";
+  text-align: center;
 }
 
-h1{
+h1, h2, h3, h4, h5, h6{
   font-family: "Montserrat";
-  font-weight: 900;
-  size: 3.5rem;
-  line-height: 1.5;
+  font-weight: 800;
 }
-h3{
-  font-family: "Montserrat";
-  font-weight: 700;
-}
+
 p{
   color: #8f8f8f;
 }
 
+
+/* Container Fluid Section */
+
 .container-fluid{
-  padding: 3% 15%;
+  padding: 7% 15%;
 }
 
-#title{
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.big-heading{
+  font-family: "Montserrat";
+  font-weight: 800;
+  size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Section */
+
+.color-section{
   background-color: #ff4c68;
   color: #fff;
 }
+.white-section{
+  background-color: #fff;
+}
+
+/* Heading */
+
+/* #title{
+
+} */
+#title .container-fluid{
+  text-align: left;
+  padding: 3% 15% 7%;
+  /* .selector1 . selector2 with space is important for parent-child, if not, .... */
+  /* overwrite the body padding */
+}
+
 
 /* Navigation Bar */
 
@@ -56,15 +85,25 @@ p{
 
 /* Title Image */
 .title-image{
-  width: 60%;
+  width: 25%;
   transform: rotate(25deg);
+
+  position: absolute;
 }
 /* Feature */
 #features{
-  padding: 7% 15%;
+  background-color: white;
+  position: relative;
+  z-index: 1;
 }
+
+.feature-title{
+  font-size: 1.5rem;
+}
+
+
 .feature-box{
-  text-align: center;
+
   padding: 5%;
 }
 .icon{
@@ -74,4 +113,82 @@ p{
 .icon:hover{
   /* to make icon change color when hover */
   color: #ff4c68;
+}
+
+/* Testimonials */
+#testimonials{
+  background-color:  #ef8172;
+
+}
+
+.testimonial-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image{
+  width: 10%;
+  border-radius: 100%;
+  margin: 25px;
+}
+
+.carousel-item{
+}
+
+#press{
+  background-color: #ef8172;
+
+  padding-bottom: 6%;
+}
+.press-logo{
+  width: 13%;
+  margin: 20px 20px 50px;
+}
+/* pricing section */
+
+#pricing{
+  padding: 100px;
+
+}
+
+.price-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column{
+  padding: 3% 2%;
+}
+
+#cta{
+  /* background: #ff4c68;
+  color: #fff; */
+}
+
+.cta-heading{
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* footer section */
+
+#footer{
+
+}
+
+.social-icon{
+  margin: 20px 10px;
+}
+
+@media (max-width: 995px) {
+  #title{
+    text-align:center;
+  }
+  .title-image{
+    position: static;
+    transform: rotate(0deg);
+    width: 40%;
+  }
 }
